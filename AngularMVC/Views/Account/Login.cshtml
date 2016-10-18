@@ -1,0 +1,15 @@
+﻿<form ng-submit="login()">
+    <label for="emailAdress">Email Adress:</label>
+    <input type="text" ng-model="loginForm.emailAdress" id="emailAdress" required/>
+
+    <label for="password">Password:</label>
+    <input type="password" ng-model="loginForm.password" id="password" required/>
+
+    <label for="rememberMe">Remember me</label>
+    <input type="checkbox" ng-model="loginForm.rememberMe" id="rememberMe"/>
+
+    <button type="submit">Login</button>
+</form>
+<div ng-if="loginForm.loginFailure">
+    D'oh!
+</div>
